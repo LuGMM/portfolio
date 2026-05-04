@@ -27,6 +27,7 @@ p {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 button {
@@ -357,6 +358,11 @@ MODAL
   height: 100vh;
   background-color: transparent;
   z-index: 49;
+  display: none;
+}
+
+.modal--open .modal_backdrop {
+  display: block;
 }
 
 .modal__half {
