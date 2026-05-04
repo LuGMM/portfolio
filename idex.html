@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luis Martinez</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/6d871591ec.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "EHRN0BFn-UJeXbYiZ",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+      <nav>
+        <figure class="nav__logo--wrapper">
+          <img id="personal-logo" src="./assets/L.png" alt="" />
+        </figure>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              onclick="toggleModal()"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#projects"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              onclick="toggleModal()"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey,</h1>
+          <h1 class="title green">I'm Luis</h1>
+          <p class="header__para">
+            I'm a <b class="green">front-end Software developer</b> with a
+            passion for creating beautiful and functional web experiences.
+            <br />Here is a little bit
+            <b class="green click" onclick="toggleModal()">about me</b>.
+          </p>
+          <div class="social__list">
+            <a
+              href="https://github.com/LuGMM"
+              target="_blank"
+              class="social__link click"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/luisgmartinezmartinez/"
+              target="_blank"
+              class="social__link click"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="" class="social__link click" target="_blank"
+              ><i class="fa-solid fa-file-lines"></i
+            ></a>
+          </div>
+        </div>
+      </header>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fa-solid fa-envelope"></i>
+        </button>
+      </a>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal_backdrop" onclick="toggleModal()"></div>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Software Developer
+          </h4>
+          <p class="modal__para">
+            I am a dedicated and passionate
+            <b class="green">Frontend Software Developer</b> with a strong
+            foundation in HTML, CSS, and JavaScript. I love creating
+            <b class="green">visually appealing</b> and
+            <b class="green">user-friendly</b> web applications that provide
+            seamless experiences across different devices.
+            <br />
+            My goal is to continuously learn and grow as a developer while
+            contributing to <b class="green">innovative projects</b> that make a
+            <b class="green">positive impact</b>.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/HTML5-Logo-PNG-Symbol-for-Web-Development-Transparent.png"
+                alt=""
+              />
+              <span class="language__name">HTML5</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/JavaScript-Logo-PNG-Symbol-for-Web-Development-Transparent.png"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/CSS-Logo-PNG-Symbol-for-Web-Development-Transparent.png"
+                alt=""
+              />
+              <span class="language__name">CSS3</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/Tailwind CSS.png"
+                alt=""
+              />
+              <span class="language__name">Tailwind CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/React.png"
+                alt=""
+              />
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/TypeScript.png"
+                alt=""
+              />
+              <span class="language__name">Typescript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/Next.js.png"
+                alt=""
+              />
+              <span class="language__name">Next.js</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">
+            Let's build something great together!
+          </h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm currently open to new opportunities and collaborations.
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input type="text" class="input" name="user_name" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">E-mail</label>
+              <input type="email" class="input" name="user_email" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea
+                type="text"
+                class="input"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">Send</button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thank you for reaching out! I look forward to connecting with you
+            soon!
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <img src="./assets/circle.svg" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" class="shape shape--2" />
+      <img src="./assets/circle.svg" class="shape shape--3" />
+      <img src="./assets/triangle.svg" class="shape shape--4" />
+      <img src="./assets/circle.svg" class="shape shape--5" />
+      <img src="./assets/squiggly.svg" class="shape shape--6" />
+      <img src="./assets/circle.svg" class="shape shape--7" />
+      <img src="./assets/semi circle.svg" class="shape shape--8" />
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="green">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/summarist.png" alt="" class="project__img" />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Summarist Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    Next.js, TypeScript, HTML, CSS, JavaScript, firebase, redux
+                  </h4>
+                  <p class="project__description--para">
+                    This clone of Summarist is a web application that showcases
+                    my ability to replicate the functionalitiy of the original
+                    Summarist app. This project includes features such as user
+                    authentication and payment processing.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/LuGMM/Summarist"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://summarist-phi.vercel.app/"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/googleDocsClone.png"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Google Docs Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    Next.js, HTML, Tailwind CSS, TypeScript, LiveBlock, Convex,
+                    firebase
+                  </h4>
+                  <p class="project__description--para">
+                    This clone of Google Docs allows users to create, edit, and
+                    collaborate on documents in real-time.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/LuGMM/word-clone-project"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://word-clone-project.vercel.app/"
+                      class="project__description--link"
+                      target="_blank"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/nextflixClone.png"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">Nextflix Clone</h3>
+                  <h4 class="project__description--sub-title">
+                    React, HTML, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    This Netflix clone show cases my ability to replicate the
+                    style and functionality of an application like Nextflix. It
+                    includes features such as user authentication and a
+                    responsive design.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com/LuGMM/netflix_clone"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://netflix-clone-tau-two-22.vercel.app"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/ultraVerseNFTClone.png"
+                  alt=""
+                  class="project__img"
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">UltraVerse NFT</h3>
+                  <h4 class="project__description--sub-title">
+                    React, HTML, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    The culminatin of my internship experience. This internship
+                    allowed me to gain valuable experience working with github
+                    pull requests and collaboration with a team. During the
+                    internship I was tasked with creating dynamic components for
+                    the UltraVerse NFT project. This included adding animations,
+                    a working carousel and a responsive design.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      target="_blank"
+                      href="https://github.com/LuGMM/luis-internship"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://luis-internship-beryl.vercel.app/"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure class="footer__logo--wrapper">
+            <img class="footer__logo--img" src="./assets/L.png" alt="" />
+          </figure>
+          <div class="footer__social--list">
+            <a
+              href="https://github.com/LuGMM"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              GitHub</a
+            >
+            <a
+              href="#"
+              onclick="toggleModal()"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Contact</a
+            >
+            <a
+              href="https://www.linkedin.com/in/luisgmartinezmartinez/"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              LinkedIn</a
+            >
+            <a
+              href="#"
+              target="_blank"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Resume</a
+            >
+          </div>
+          <div class="footer__copyright">© 2025 Luis Martinez</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
